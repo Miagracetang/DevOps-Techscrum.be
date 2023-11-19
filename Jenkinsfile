@@ -27,8 +27,7 @@ pipeline {
                 }
             }
         }
-    }
-
+    
         stage('build') {
             steps {
                 sh 'npm install'
@@ -51,7 +50,7 @@ pipeline {
                 }
             }
         }
-
+    }
  
         stage('Deploy to ECS') {
             steps {
